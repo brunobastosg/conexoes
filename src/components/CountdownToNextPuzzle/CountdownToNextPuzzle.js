@@ -9,29 +9,29 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     return (
       <span className="font-[600]">
-        New Game Available! Refresh Your Browser.
+        Novo jogo disponível! Atualize a página.
       </span>
     );
   }
   const timeParts = [];
 
   if (days > 0) {
-    timeParts.push(`${days} Day${days > 1 ? "s" : ""}`);
+    timeParts.push(`${days} Dia${days > 1 ? "s" : ""}`);
   }
   if (hours > 0) {
-    timeParts.push(`${hours} Hour${hours > 1 ? "s" : ""}`);
+    timeParts.push(`${hours} Hora${hours > 1 ? "s" : ""}`);
   }
   if (minutes > 0) {
-    timeParts.push(`${minutes} Minute${minutes > 1 ? "s" : ""}`);
+    timeParts.push(`${minutes} Minuto${minutes > 1 ? "s" : ""}`);
   }
 
   // Create a sentence based on the time parts
-  let timeLeftString = "Next Puzzle Released in ";
+  let timeLeftString = "Próximo Jogo Será Lançado em ";
   if (timeParts.length > 2) {
     timeLeftString += timeParts.slice(0, -1).join(", ");
-    timeLeftString += `, and ${timeParts.slice(-1)}`;
+    timeLeftString += `, e ${timeParts.slice(-1)}`;
   } else if (timeParts.length == 2) {
-    timeLeftString += `${timeParts[0]} and ${timeParts[1]}`;
+    timeLeftString += `${timeParts[0]} e ${timeParts[1]}`;
   } else {
     timeLeftString += timeParts[0];
   }

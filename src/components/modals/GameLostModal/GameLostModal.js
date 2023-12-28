@@ -10,14 +10,14 @@ function GameLostModal({ open }) {
 
   return (
     <BaseModal
-      title="You lost."
+      title="Você perdeu."
       initiallyOpen={open}
       footerElements={<ShareScoreButton />}
       showActionButton={false}
     >
       <div className="grid gap-y-2">
         <p className="text-lg font-[500] text-center">
-          Better luck next time. The correct answers are below.
+          Boa sorte da próxima vez. As respostas corretas estão abaixo.
         </p>
         {gameData.map((obj) => (
           <SolvedWordRow key={obj.category} {...obj} />

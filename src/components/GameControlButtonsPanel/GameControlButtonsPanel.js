@@ -40,9 +40,9 @@ function GameControlButtonsPanel({
     // check that the guess hasnt already been submitted previously
     if (isGuessRepeated({ submittedGuesses, guessCandidate })) {
       toast({
-        label: "Notification",
-        title: "Repeated Guess",
-        description: "You previously made this guess!",
+        label: "Notificação",
+        title: "Palpite Repetido",
+        description: "Você já fez esse palpite anteriormente!",
       });
 
       return;
@@ -80,10 +80,10 @@ function GameControlButtonsPanel({
       setGridShake(true);
       if (isGuessOneAway) {
         toast({
-          label: "Notification",
-          title: "Close Guess",
+          label: "Notificação",
+          title: "Palpite Próximo",
           description:
-            "You were one guess away from correctly guessing a category!",
+            "Você estava a apenas um palpite de acertar completamente a categoria!",
         });
       }
     }
@@ -99,7 +99,7 @@ function GameControlButtonsPanel({
         }
       >
         <Shuffle className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Shuffle</p>
+        <p className="select-none">Embaralhar</p>
       </Button>
       <Button
         size="deselectallsize"
@@ -108,7 +108,7 @@ function GameControlButtonsPanel({
         onClick={deselectAll}
       >
         <Undo className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Deselect All</p>
+        <p className="select-none">Desmarcar Todos</p>
       </Button>
       <Button
         variant="submit"
@@ -116,7 +116,7 @@ function GameControlButtonsPanel({
         disabled={isGameOver || guessCandidate.length !== categorySize}
       >
         <SendHorizontal className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Submit</p>
+        <p className="select-none">Enviar</p>
       </Button>
     </div>
   );

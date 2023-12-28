@@ -7,22 +7,22 @@ import { shareStatus } from "../../lib/share-game";
 import { GameStatusContext } from "../../providers/GameStatusProvider";
 import { PuzzleDataContext } from "../../providers/PuzzleDataProvider";
 
-function ShareScoreButton({ buttonText = "Share", className = "" }) {
+function ShareScoreButton({ buttonText = "Compartilhar", className = "" }) {
   const { gameData } = React.useContext(PuzzleDataContext);
   const { submittedGuesses } = React.useContext(GameStatusContext);
   const { toast } = useToast();
   function handleShareToClipboard() {
     toast({
-      label: "Notification",
+      label: "Notificação",
       title: "",
-      description: "Copied to clipboard!",
+      description: "Copiado para a área de transferência!",
     });
   }
   function handleShareFailure() {
     toast({
-      label: "Notification",
+      label: "Notificação",
       title: "",
-      description: "Was unable to copy to clipboard / share.",
+      description: "Falha ao copiar para a área de transferência / compartilhar.",
     });
   }
   return (

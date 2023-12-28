@@ -16,33 +16,33 @@ function InfoModal() {
       title=""
       trigger={<Info className="mr-4" />}
       initiallyOpen={false}
-      actionButtonText="Got It!"
+      actionButtonText="Entendi!"
     >
       <Tabs defaultValue="how-to-play">
         <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="how-to-play">How To Play</TabsTrigger>
-          <TabsTrigger value="about-us">About Us</TabsTrigger>
+          <TabsTrigger value="how-to-play">Como Jogar</TabsTrigger>
+          <TabsTrigger value="about-us">Sobre</TabsTrigger>
         </TabsList>
         <TabsContent value="how-to-play">
           {" "}
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What's The Goal?</AccordionTrigger>
+              <AccordionTrigger>Qual o Objetivo?</AccordionTrigger>
               <AccordionContent>
-                Find groups of items or names that share something in common.
+                Encontre grupos de itens ou nomes que possuam algo em comum.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How Do I Play?</AccordionTrigger>
+              <AccordionTrigger>Como Jogar?</AccordionTrigger>
               <AccordionContent>
-                Select the items and tap 'Submit' to check if your guess matches
-                one of the answer categories.
+                Selecione os itens e clique em 'Enviar' para verificar se seu palpite
+                corresponde a uma das categorias de resposta.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>How Many Tries Do I Get?</AccordionTrigger>
+              <AccordionTrigger>Quantas Vezes Eu Posso Tentar?</AccordionTrigger>
               <AccordionContent>
-                {`You can make ${MAX_MISTAKES} mistakes before the game ends.`}
+                {`Você pode cometer ${MAX_MISTAKES} erros antes que o jogo termine.`}
               </AccordionContent>
             </AccordionItem>
           </Accordion>

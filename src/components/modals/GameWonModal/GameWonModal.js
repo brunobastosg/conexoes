@@ -11,12 +11,12 @@ function GameWonModal({ open, submittedGuesses }) {
 
   return (
     <BaseModal
-      title="You won the game!"
+      title="Você ganhou!"
       initiallyOpen={open}
       footerElements={<ShareScoreButton />}
       showActionButton={false}
     >
-      <p>{"Great job, share your results!"}</p>
+      <p>{"Bom trabalho, compartilhe seus resultados!"}</p>
       <div className="justify-center">
         {/* the whitespace: pre style makes the emoji grid appear with new lines character */}
         <span className="text-center whitespace-pre">
