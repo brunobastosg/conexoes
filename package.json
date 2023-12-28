@@ -30,9 +30,15 @@
     "tailwindcss-animate": "^1.0.7",
     "ua-parser-js": "^1.0.36"
   },
+  "targets": {
+    "default": {
+      "publicUrl": "/conexoes"
+    }
+  },
   "scripts": {
     "predev": "rimraf .parcel-cache dist",
     "dev": "parcel src/index.html",
+    "prebuild": "rimraf dist",
     "build": "parcel build src/index.html",
     "nc": "new-component"
   },
