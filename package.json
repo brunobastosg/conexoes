@@ -1,4 +1,7 @@
 {
+  "name": "conexoes",
+  "version": "0.0.1",
+  "description": "Versão em Português do jogo Connections do New York Times",
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
