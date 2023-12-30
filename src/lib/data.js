@@ -64,5 +64,27 @@ export const CONNECTION_GAMES = [
       words: ["Mato", "Rio", "Espírito", "São"],
       difficulty: 4,
     },
+  ],
+  [
+    {
+      category: "Corpos Celestes",
+      words: ["Planeta", "Estrela", "Asteroide", "Cometa"],
+      difficulty: 1,
+    },
+    {
+      category: "Povoações",
+      words: ["Aldeia", "Cidade", "Distrito", "Província"],
+      difficulty: 2,
+    },
+    {
+      category: "Palavras de Origem Árabe",
+      words: ["Algodão", "Armazém", "Chafariz", "Algarismo"],
+      difficulty: 3,
+    },
+    {
+      category: "___ Nova",
+      words: ["Fonte", "Roupa", "Lua", "Vila"],
+      difficulty: 4,
+    },
   ]
 ];
